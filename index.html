@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>Hello, World!</p>
+
+  <!-- 상단 배너: 모든 페이지에 똑같이 들어 있습니다. 이름을 바꿀 땐 5개 파일 모두 바꿔주세요 -->
+  <header class="banner">
+    <div class="banner-inner">
+      <a class="site-name" href="index.html">Your Name</a>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <!-- images 폴더의 profile.jpg를 본인 사진으로 바꾸세요 (파일 이름은 그대로) -->
+      <img src="images/profile.jpg" alt="Profile photo">
+      <div>
+        <h1>Your Name</h1>
+        <p class="role">Ph.D. Candidate, Department of ○○, ○○ University</p>
+        <p>
+          Hello! I am a researcher interested in <strong>topic A</strong> and <strong>topic B</strong>.
+          Write two or three sentences here about who you are and what you work on.
+        </p>
+        <p>
+          <a class="button" href="cv.html">View CV</a>
+          <a class="button" href="contact.html">Contact me</a>
+        </p>
+        <!-- 프로필 링크: href="..." 안의 주소를 본인 프로필 주소로 바꾸세요. 안 쓰는 줄은 지워도 됩니다 -->
+        <p class="links">
+          <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Your-Name">ResearchGate</a>
+          <a href="https://www.linkedin.com/in/your-id">LinkedIn</a>
+          <a href="https://github.com/your-id">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Your Name</footer>
+
 </body>
 </html>

@@ -1,0 +1,135 @@
+/* ===== 전체 색상/글꼴 설정 (여기만 바꿔도 분위기가 바뀝니다) ===== */
+:root {
+  --text: #393939;
+  --heading: #222;
+  --muted: #727272;
+  --link: #267cb9;
+  --line: #e5e5e5;
+  --bg: #ffffff;
+  --banner: #f7f7f7;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 15px/1.6 "Helvetica Neue", Helvetica, Arial, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1, h2, h3, h4 { color: var(--heading); line-height: 1.25; margin: 1.6em 0 0.6em; }
+h1 { font-size: 28px; }
+h2 { font-size: 22px; border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+h3 { font-size: 17px; }
+
+/* ===== 상단 배너(메뉴) ===== */
+.banner {
+  position: sticky;
+  top: 0;
+  background: var(--banner);
+  border-bottom: 1px solid var(--line);
+  z-index: 10;
+}
+.banner-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.site-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--heading);
+}
+.site-name:hover { text-decoration: none; }
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu a {
+  display: block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--text);
+}
+.menu a:hover { background: #ebebeb; text-decoration: none; }
+.menu a.active { background: var(--heading); color: #fff; }
+
+/* ===== 본문 ===== */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+}
+
+/* 첫 페이지: 사진 + 소개 */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-top: 40px;
+}
+.intro img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+}
+.intro h1 { margin-top: 0; }
+.intro .role { color: var(--muted); margin: -6px 0 14px; }
+
+/* CV 등에서 쓰는 표 */
+table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+td { padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.when { color: var(--muted); white-space: nowrap; text-align: right; }
+
+.item { margin-bottom: 18px; }
+.item .meta { color: var(--muted); font-style: italic; }
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--banner);
+  color: var(--heading);
+}
+.button:hover { background: #ebebeb; text-decoration: none; }
+
+/* 첫 페이지 프로필 링크 줄 */
+.links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
+.links a { color: var(--muted); border-bottom: 1px solid var(--line); }
+.links a:hover { color: var(--link); text-decoration: none; }
+
+footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 휴대폰 화면 */
+@media (max-width: 600px) {
+  .intro { flex-direction: column; text-align: center; gap: 20px; }
+  .intro img { width: 160px; height: 160px; }
+  .banner-inner { justify-content: center; }
+  .menu { justify-content: center; }
+  .links { justify-content: center; }
+  .menu a { padding: 6px 9px; }
+  td.when { white-space: normal; }
+}
