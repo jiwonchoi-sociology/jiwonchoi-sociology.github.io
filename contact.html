@@ -4,41 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | Your Name</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="layout">
 
-  <header class="banner">
-    <div class="banner-inner">
-      <a class="site-name" href="index.html">Your Name</a>
-      <ul class="menu">
+    <!-- ===== 왼쪽 본문: 페이지마다 다른 내용 ===== -->
+    <main>
+      <div class="content">
+        <h1>Contact</h1>
+        <p class="lead">Feel free to reach out about research, teaching, or collaboration.</p>
+
+        <!-- 이메일은 두 군데(mailto: 뒤, 화면 글자) 모두 바꾸세요 -->
+        <table>
+          <tr><td>Email</td><td><a href="mailto:you@example.com">you@example.com</a></td></tr>
+          <tr><td>Office</td><td>Building, Room 000<br>University Name, City</td></tr>
+          <tr><td>Google Scholar</td><td><a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar profile</a></td></tr>
+          <tr><td>ResearchGate</td><td><a href="https://www.researchgate.net/profile/Your-Name">ResearchGate profile</a></td></tr>
+          <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/your-id">linkedin.com/in/your-id</a></td></tr>
+        </table>
+
+        <p style="margin-top:28px"><a class="button solid" href="mailto:you@example.com">Send me an email</a></p>
+
+        <footer>© 2026 Your Name</footer>
+      </div>
+    </main>
+
+    <!-- ===== 오른쪽 사이드바: 5개 파일 모두 똑같습니다. 이름·소속·링크를 바꿀 땐 5개 파일 모두 바꿔주세요 ===== -->
+    <aside class="sidebar">
+      <!-- 프로필 사진: images 폴더의 profile.jpg 를 바꾸면 됩니다 -->
+      <img class="side-photo" src="images/profile.jpg" alt="Profile photo">
+      <a class="side-name" href="index.html">Your Name</a>
+      <p class="side-role">Ph.D. Candidate<br>Department of ○○<br>○○ University</p>
+
+      <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
-    </div>
-  </header>
 
-  <main>
-    <h1>Contact me</h1>
-    <p>Feel free to reach out about research, teaching, or collaboration.</p>
+      <!-- 로고 링크: href="..." 안의 주소만 본인 주소로 바꾸세요. 안 쓰는 줄은 지우세요 -->
+      <div class="icons">
+        <a href="mailto:you@example.com" title="Email"><img src="images/icons/email.svg" alt="Email"></a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar"><img src="images/icons/scholar.svg" alt="Google Scholar"></a>
+        <a href="https://www.researchgate.net/profile/Your-Name" title="ResearchGate"><img src="images/icons/researchgate.svg" alt="ResearchGate"></a>
+        <a href="https://www.linkedin.com/in/your-id" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </aside>
 
-    <!-- 이메일 주소는 두 군데(href와 화면에 보이는 글자) 모두 바꿔주세요 -->
-    <table>
-      <tr><td><strong>Email</strong></td><td><a href="mailto:you@example.com">you@example.com</a></td></tr>
-      <tr><td><strong>Office</strong></td><td>Building, Room 000, University Name</td></tr>
-      <tr><td><strong>Google Scholar</strong></td><td><a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar profile</a></td></tr>
-      <tr><td><strong>ResearchGate</strong></td><td><a href="https://www.researchgate.net/profile/Your-Name">ResearchGate profile</a></td></tr>
-      <tr><td><strong>LinkedIn</strong></td><td><a href="https://www.linkedin.com/in/your-id">linkedin.com/in/your-id</a></td></tr>
-      <tr><td><strong>GitHub</strong></td><td><a href="https://github.com/your-id">github.com/your-id</a></td></tr>
-    </table>
-
-    <p><a class="button" href="mailto:you@example.com">Send me an email</a></p>
-  </main>
-
-  <footer>© 2026 Your Name</footer>
-
+  </div>
 </body>
 </html>

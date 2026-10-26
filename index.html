@@ -3,52 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jiwon Choi</title>
+  <title>Your Name</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="layout">
 
-  <!-- 상단 배너: 모든 페이지에 똑같이 들어 있습니다. 이름을 바꿀 땐 5개 파일 모두 바꿔주세요 -->
-  <header class="banner">
-    <div class="banner-inner">
-      <a class="site-name" href="index.html">Jiwon Choi</a>
-      <ul class="menu">
+    <!-- ===== 왼쪽 본문: 페이지마다 다른 내용 ===== -->
+    <main>
+      <div class="content">
+        <h1>Hello!</h1>
+        <!-- 큰 글씨 소개 한 문장 -->
+        <p class="lead">
+          I am a Ph.D. candidate studying <strong>topic A</strong> and <strong>topic B</strong>.
+        </p>
+        <!-- 조금 더 자세한 소개 2~3문장 -->
+        <p>
+          Write two or three sentences here about what questions you study, what methods you use,
+          and why it matters. You can also mention your advisor or lab.
+        </p>
+        <p>
+          <a class="button solid" href="cv.html">View CV</a>
+          <a class="button" href="contact.html">Contact me</a>
+        </p>
+
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Interest 1</li>
+          <li>Interest 2</li>
+          <li>Interest 3</li>
+        </ul>
+
+        <!-- 소식이 없으면 아래 News 부분은 통째로 지워도 됩니다 -->
+        <h2>News</h2>
+        <div class="entry"><span>Paper accepted at <em>Journal Name</em>.</span><span class="when">Oct 2026</span></div>
+        <div class="entry"><span>Presented at <em>Conference Name</em>.</span><span class="when">Jun 2026</span></div>
+
+        <footer>© 2026 Your Name</footer>
+      </div>
+    </main>
+
+    <!-- ===== 오른쪽 사이드바: 5개 파일 모두 똑같습니다. 이름·소속·링크를 바꿀 땐 5개 파일 모두 바꿔주세요 ===== -->
+    <aside class="sidebar">
+      <!-- 프로필 사진: images 폴더의 profile.jpg 를 바꾸면 됩니다 -->
+      <img class="side-photo" src="images/profile.jpg" alt="Profile photo">
+      <a class="side-name" href="index.html">Your Name</a>
+      <p class="side-role">Ph.D. Candidate<br>Department of ○○<br>○○ University</p>
+
+      <ul class="nav">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-  </header>
 
-  <main>
-    <section class="intro">
-      <!-- images 폴더의 profile.jpg를 본인 사진으로 바꾸세요 (파일 이름은 그대로) -->
-      <img src="images/profile.jpg" alt="Profile photo">
-      <div>
-        <h1>Jiwon Choi</h1>
-        <p class="role">Ph.D. Candidate, Department of Sociology, University at Albany, State University of New York</p>
-        <p>
-          Hello! I am a researcher interested in <strong>topic A</strong> and <strong>topic B</strong>.
-          Write two or three sentences here about who you are and what you work on.
-        </p>
-        <p>
-          <a class="button" href="cv.html">View CV</a>
-          <a class="button" href="contact.html">Contact me</a>
-        </p>
-        <!-- 프로필 링크: href="..." 안의 주소를 본인 프로필 주소로 바꾸세요. 안 쓰는 줄은 지워도 됩니다 -->
-        <p class="links">
-          <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
-          <a href="https://www.researchgate.net/profile/Your-Name">ResearchGate</a>
-          <a href="https://www.linkedin.com/in/your-id">LinkedIn</a>
-          <a href="https://github.com/your-id">GitHub</a>
-        </p>
+      <!-- 로고 링크: href="..." 안의 주소만 본인 주소로 바꾸세요. 안 쓰는 줄은 지우세요 -->
+      <div class="icons">
+        <a href="mailto:you@example.com" title="Email"><img src="images/icons/email.svg" alt="Email"></a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar"><img src="images/icons/scholar.svg" alt="Google Scholar"></a>
+        <a href="https://www.researchgate.net/profile/Your-Name" title="ResearchGate"><img src="images/icons/researchgate.svg" alt="ResearchGate"></a>
+        <a href="https://www.linkedin.com/in/your-id" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
       </div>
-    </section>
-  </main>
+    </aside>
 
-  <footer>© 2026 Jiwon Choi</footer>
-
+  </div>
 </body>
 </html>

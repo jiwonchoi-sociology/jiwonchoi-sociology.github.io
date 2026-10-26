@@ -4,45 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Teaching | Your Name</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="layout">
 
-  <header class="banner">
-    <div class="banner-inner">
-      <a class="site-name" href="index.html">Your Name</a>
-      <ul class="menu">
+    <!-- ===== 왼쪽 본문: 페이지마다 다른 내용 ===== -->
+    <main>
+      <div class="content">
+        <h1>Teaching</h1>
+
+        <h2>Instructor</h2>
+        <div class="item">
+          <div class="entry"><strong>Course Title (Course Code)</strong><span class="when">Spring 2026</span></div>
+          <p class="muted">University Name</p>
+          <p>One or two sentences describing the course.</p>
+        </div>
+
+        <h2>Teaching Assistant</h2>
+        <div class="item">
+          <div class="entry"><strong>Course Title (Course Code)</strong><span class="when">Fall 2025</span></div>
+          <p class="muted">University Name</p>
+          <p>What you did: led discussion sections, graded assignments, held office hours.</p>
+        </div>
+
+        <h2>Guest Lectures</h2>
+        <div class="entry"><span>Lecture title — Course name</span><span class="when">2025</span></div>
+
+        <footer>© 2026 Your Name</footer>
+      </div>
+    </main>
+
+    <!-- ===== 오른쪽 사이드바: 5개 파일 모두 똑같습니다. 이름·소속·링크를 바꿀 땐 5개 파일 모두 바꿔주세요 ===== -->
+    <aside class="sidebar">
+      <!-- 프로필 사진: images 폴더의 profile.jpg 를 바꾸면 됩니다 -->
+      <img class="side-photo" src="images/profile.jpg" alt="Profile photo">
+      <a class="side-name" href="index.html">Your Name</a>
+      <p class="side-role">Ph.D. Candidate<br>Department of ○○<br>○○ University</p>
+
+      <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="teaching.html" class="active">Teaching</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-  </header>
 
-  <main>
-    <h1>Teaching</h1>
+      <!-- 로고 링크: href="..." 안의 주소만 본인 주소로 바꾸세요. 안 쓰는 줄은 지우세요 -->
+      <div class="icons">
+        <a href="mailto:you@example.com" title="Email"><img src="images/icons/email.svg" alt="Email"></a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar"><img src="images/icons/scholar.svg" alt="Google Scholar"></a>
+        <a href="https://www.researchgate.net/profile/Your-Name" title="ResearchGate"><img src="images/icons/researchgate.svg" alt="ResearchGate"></a>
+        <a href="https://www.linkedin.com/in/your-id" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </aside>
 
-    <h2>Instructor</h2>
-    <div class="item">
-      <strong>Course Title (Course Code)</strong> <span class="meta">— University Name, Spring 2026</span>
-      <p>One or two sentences describing the course.</p>
-    </div>
-
-    <h2>Teaching Assistant</h2>
-    <div class="item">
-      <strong>Course Title (Course Code)</strong> <span class="meta">— University Name, Fall 2025</span>
-      <p>What you did: led recitations, graded assignments, held office hours, etc.</p>
-    </div>
-
-    <h2>Guest Lectures</h2>
-    <ul>
-      <li>Lecture title — Course name, Semester</li>
-    </ul>
-  </main>
-
-  <footer>© 2026 Your Name</footer>
-
+  </div>
 </body>
 </html>

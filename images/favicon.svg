@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 배경 네모: fill 색을 바꾸면 배경색이 바뀝니다 -->
+  <rect width="64" height="64" rx="12" fill="#0000FF"/>
+  <!-- 이니셜: YN 을 본인 이니셜(영문 1~2글자)로 바꾸세요 -->
+  <text x="32" y="43" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="600" fill="#fbfaf7">JC</text>
+</svg>

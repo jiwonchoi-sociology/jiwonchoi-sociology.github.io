@@ -4,49 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Research | Your Name</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="layout">
 
-  <header class="banner">
-    <div class="banner-inner">
-      <a class="site-name" href="index.html">Your Name</a>
-      <ul class="menu">
+    <!-- ===== 왼쪽 본문: 페이지마다 다른 내용 ===== -->
+    <main>
+      <div class="content">
+        <h1>Research</h1>
+        <p class="lead">A short paragraph summarizing your research agenda.</p>
+
+        <h2>Publications</h2>
+        <ol>
+          <li>Author A., <strong>Your Name</strong>, Author C. (2025). Paper title. <em>Journal Name</em>. <a href="#">[link]</a></li>
+          <li><strong>Your Name</strong>, Author B. (2024). Paper title. <em>Journal Name</em>. <a href="#">[link]</a></li>
+        </ol>
+
+        <h2>Working Papers</h2>
+        <div class="item">
+          <h3>Paper Title</h3>
+          <p class="muted">with Coauthor Name</p>
+          <p>Two or three sentences on the question, data, and main finding.</p>
+        </div>
+
+        <h2>Presentations</h2>
+        <div class="entry"><span>Talk title — Conference Name, City</span><span class="when">2025</span></div>
+
+        <footer>© 2026 Your Name</footer>
+      </div>
+    </main>
+
+    <!-- ===== 오른쪽 사이드바: 5개 파일 모두 똑같습니다. 이름·소속·링크를 바꿀 땐 5개 파일 모두 바꿔주세요 ===== -->
+    <aside class="sidebar">
+      <!-- 프로필 사진: images 폴더의 profile.jpg 를 바꾸면 됩니다 -->
+      <img class="side-photo" src="images/profile.jpg" alt="Profile photo">
+      <a class="side-name" href="index.html">Your Name</a>
+      <p class="side-role">Ph.D. Candidate<br>Department of ○○<br>○○ University</p>
+
+      <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="research.html" class="active">Research</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-  </header>
 
-  <main>
-    <h1>Research</h1>
-    <p>A short paragraph summarizing your research interests.</p>
+      <!-- 로고 링크: href="..." 안의 주소만 본인 주소로 바꾸세요. 안 쓰는 줄은 지우세요 -->
+      <div class="icons">
+        <a href="mailto:you@example.com" title="Email"><img src="images/icons/email.svg" alt="Email"></a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar"><img src="images/icons/scholar.svg" alt="Google Scholar"></a>
+        <a href="https://www.researchgate.net/profile/Your-Name" title="ResearchGate"><img src="images/icons/researchgate.svg" alt="ResearchGate"></a>
+        <a href="https://www.linkedin.com/in/your-id" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </aside>
 
-    <h2>Projects</h2>
-    <div class="item">
-      <h3>Project Title</h3>
-      <p><a href="#">Publication</a> · <a href="#">Code</a></p>
-      <p>Describe the question, the method, and the main finding in a few sentences.</p>
-      <!-- 그림을 넣으려면 images 폴더에 파일을 올리고 아래 줄의 주석을 푸세요 -->
-      <!-- <img src="images/project1.jpg" alt="Project figure" style="max-width:100%"> -->
-    </div>
-
-    <h2>Publications</h2>
-    <ol>
-      <li>Author A., <strong>Your Name</strong>, Author C. "Paper title." <em>Journal Name</em>, 2025. <a href="#">[link]</a></li>
-      <li><strong>Your Name</strong>, Author B. "Paper title." <em>Conference Name</em>, 2024. <a href="#">[link]</a></li>
-    </ol>
-
-    <h2>Talks</h2>
-    <ul>
-      <li>Talk title — Event name, City, 2025</li>
-    </ul>
-  </main>
-
-  <footer>© 2026 Your Name</footer>
-
+  </div>
 </body>
 </html>

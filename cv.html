@@ -4,54 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CV | Your Name</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="layout">
 
-  <header class="banner">
-    <div class="banner-inner">
-      <a class="site-name" href="index.html">Your Name</a>
-      <ul class="menu">
+    <!-- ===== 왼쪽 본문: 페이지마다 다른 내용 ===== -->
+    <main>
+      <div class="content">
+        <h1>Curriculum Vitae</h1>
+        <!-- files 폴더에 cv.pdf 를 올리면 아래 버튼과 미리보기 창이 그 파일을 보여줍니다 -->
+        <p>
+          <a class="button solid" href="files/cv.pdf" download>Download PDF</a>
+          <a class="button" href="files/cv.pdf" target="_blank">Open in new tab</a>
+        </p>
+        <p class="muted">Last updated: October 2026</p>
+
+        <object class="pdf-frame" data="files/cv.pdf" type="application/pdf">
+          <p>Your browser can’t show the PDF here. <a href="files/cv.pdf">Download it instead.</a></p>
+        </object>
+
+        <footer>© 2026 Your Name</footer>
+      </div>
+    </main>
+
+    <!-- ===== 오른쪽 사이드바: 5개 파일 모두 똑같습니다. 이름·소속·링크를 바꿀 땐 5개 파일 모두 바꿔주세요 ===== -->
+    <aside class="sidebar">
+      <!-- 프로필 사진: images 폴더의 profile.jpg 를 바꾸면 됩니다 -->
+      <img class="side-photo" src="images/profile.jpg" alt="Profile photo">
+      <a class="side-name" href="index.html">Your Name</a>
+      <p class="side-role">Ph.D. Candidate<br>Department of ○○<br>○○ University</p>
+
+      <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="cv.html" class="active">CV</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </div>
-  </header>
 
-  <main>
-    <h1>CV</h1>
-    <!-- PDF 이력서를 올리려면 files 폴더에 cv.pdf를 넣으면 이 버튼이 작동합니다 -->
-    <p><a class="button" href="files/cv.pdf">Download PDF</a></p>
+      <!-- 로고 링크: href="..." 안의 주소만 본인 주소로 바꾸세요. 안 쓰는 줄은 지우세요 -->
+      <div class="icons">
+        <a href="mailto:you@example.com" title="Email"><img src="images/icons/email.svg" alt="Email"></a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar"><img src="images/icons/scholar.svg" alt="Google Scholar"></a>
+        <a href="https://www.researchgate.net/profile/Your-Name" title="ResearchGate"><img src="images/icons/researchgate.svg" alt="ResearchGate"></a>
+        <a href="https://www.linkedin.com/in/your-id" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </aside>
 
-    <h2>Education</h2>
-    <table>
-      <tr><td><strong>Ph.D.</strong>, Major — University Name</td><td class="when">2023 – present</td></tr>
-      <tr><td><strong>M.S.</strong>, Major — University Name</td><td class="when">2021 – 2023</td></tr>
-      <tr><td><strong>B.S.</strong>, Major — University Name</td><td class="when">2017 – 2021</td></tr>
-    </table>
-
-    <h2>Experience</h2>
-    <div class="item">
-      <strong>Position @ Organization</strong> <span class="meta">(2024 – present)</span>
-      <ul>
-        <li>What you did, in one line</li>
-        <li>Another achievement</li>
-      </ul>
-    </div>
-
-    <h2>Skills</h2>
-    <p>Python, R, SQL, LaTeX, …</p>
-
-    <h2>Awards</h2>
-    <ul>
-      <li>Award name, Organization (2025)</li>
-    </ul>
-  </main>
-
-  <footer>© 2026 Your Name</footer>
-
+  </div>
 </body>
 </html>
