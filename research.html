@@ -3,47 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Research | Your Name</title>
+  <title>Research | Jiwon Choi</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* 논문 목록 간격 */
+    .pubs { padding-left: 0; list-style: none; }
+    .pubs li { margin-bottom: 14px; }
+  </style>
 </head>
 <body>
   <div class="layout">
 
-    <!-- ===== 왼쪽 본문: 페이지마다 다른 내용 ===== -->
+    <!-- ===== 왼쪽 본문 ===== -->
     <main>
       <div class="content">
         <h1>Research</h1>
-        <p class="lead">A short paragraph summarizing your research agenda.</p>
+        <p class="lead">My research spans race &amp; ethnicity, international migration, urban sociology, and the sociology of education.</p>
 
-        <h2>Publications</h2>
-        <ol>
-          <li>Author A., <strong>Your Name</strong>, Author C. (2025). Paper title. <em>Journal Name</em>. <a href="#">[link]</a></li>
-          <li><strong>Your Name</strong>, Author B. (2024). Paper title. <em>Journal Name</em>. <a href="#">[link]</a></li>
-        </ol>
+        <h2>Peer-Reviewed Journal Articles</h2>
+        <ul class="pubs">
+          <li>Zawadi Rucks-Ahidiana, <strong>Jiwon Choi</strong>, and Tsveta Dobreva. 2025. “<a href="https://doi.org/10.1177/15356841251330240" target="_blank">The Growth Machine as an Agent of Racial Capitalism: Gentrification Coverage and the News Media</a>.” <em>City and Community</em> 24(3): 167–188.</li>
+          <li><strong>Choi, Jiwon</strong>. 2020. “<a href="https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002599638" target="_blank">The Acquisition of Religiosity through Everyday Language: A Case Study on Korea SGI</a>.” <em>Cross-Cultural Studies</em> 26(1): 225–270. <span class="muted">(in Korean)</span></li>
+          <li><strong>Choi, Jiwon</strong>, and Kee-Bom Nahm. 2019. “<a href="https://shs.cairn.info/article/E_SOC_145_0037?lang=en&amp;ID_ARTICLE=E_SOC_145_0037" target="_blank">Religious Communication Language: Empathic Encouragement in Korea Soka Gakkai International (KSGI)</a>.” <em>Sociétés</em> 145(3): 37–48.</li>
+          <li><strong>Choi, Jiwon</strong>, and Moon Gi Seo. 2018. “<a href="https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002382150" target="_blank">Self-expression through Reflective Leisure: Identity Expressed by the Medium of Indie Book Store</a>.” <em>The Journal of Culture Contents</em> 13: 7–41. <span class="muted">(in Korean)</span></li>
+        </ul>
 
-        <h2>Working Papers</h2>
-        <div class="item">
-          <h3>Paper Title</h3>
-          <p class="muted">with Coauthor Name</p>
-          <p>Two or three sentences on the question, data, and main finding.</p>
-        </div>
+        <h2>Book Chapters</h2>
+        <ul class="pubs">
+          <li><strong>Choi, Jiwon</strong>. Forthcoming. “Navigating New Territories for West African Women in South Korea: Characteristics of Place and Parenting Challenges.” In <em>East Asian Urban Communities: Social Analytic Lenses on Migration and Cultural Diversity</em>, edited by Tetsuo Mizukami, Andrey V. Rezaev, and Michael C. Thornton. Palgrave Macmillan.</li>
+          <li>Yoon, Soo-Yeon, <strong>Jiwon Choi</strong>, Analyn Mapoy, and Kaleena Wong. 2025. “<a href="https://doi.org/10.1108/S1530-353520250000029004" target="_blank">Attending School While Living at Home: Increased Inequalities Among College Students During the COVID-19 Pandemic</a>.” Pp. 88–103 in <em>Education and the Family: Parental Involvement Practices in the Home and School</em>, Contemporary Perspectives in Family Research, Vol. 29, edited by Sampson Lee Blair and Timothy J. Madigan. Leeds: Emerald Publishing.</li>
+        </ul>
 
-        <h2>Presentations</h2>
-        <div class="entry"><span>Talk title — Conference Name, City</span><span class="when">2025</span></div>
-
-        <footer>© 2026 Your Name</footer>
+        <footer>© 2026 Jiwon Choi</footer>
       </div>
     </main>
 
-    <!-- ===== 오른쪽 사이드바: 5개 파일 모두 똑같습니다. 이름·소속·링크를 바꿀 땐 5개 파일 모두 바꿔주세요 ===== -->
+    <!-- ===== 오른쪽 사이드바 ===== -->
     <aside class="sidebar">
-      <!-- 프로필 사진: images 폴더의 profile.jpg 를 바꾸면 됩니다 -->
       <img class="side-photo" src="images/profile.jpg" alt="Profile photo">
-      <a class="side-name" href="index.html">Your Name</a>
-      <p class="side-role">Ph.D. Candidate<br>Department of ○○<br>○○ University</p>
+      <a class="side-name" href="index.html">Jiwon Choi</a>
+      <p class="side-role">Ph.D. Candidate<br>Department of Sociology<br>University at Albany, State University of New York</p>
 
-     <ul class="nav">
+      <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="research.html" class="active">Research</a></li>
         <li><a href="teaching.html">Teaching</a></li>
@@ -51,12 +53,11 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
-      <!-- 로고 링크: href="..." 안의 주소만 본인 주소로 바꾸세요. 안 쓰는 줄은 지우세요 -->
       <div class="icons">
-        <a href="mailto:you@example.com" title="Email"><img src="images/icons/email.svg" alt="Email"></a>
-        <a href="https://scholar.google.com/citations?user=YOUR_ID" title="Google Scholar"><img src="images/icons/scholar.svg" alt="Google Scholar"></a>
-        <a href="https://www.researchgate.net/profile/Your-Name" title="ResearchGate"><img src="images/icons/researchgate.svg" alt="ResearchGate"></a>
-        <a href="https://www.linkedin.com/in/your-id" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="mailto:jchoi27@albany.edu" title="Email"><img src="images/icons/email.svg" alt="Email"></a>
+        <a href="https://scholar.google.com/citations?user=bQFxTnsAAAAJ&amp;hl=en" title="Google Scholar"><img src="images/icons/scholar.svg" alt="Google Scholar"></a>
+        <a href="https://www.researchgate.net/profile/Jiwon-Choi-56" title="ResearchGate"><img src="images/icons/researchgate.svg" alt="ResearchGate"></a>
+        <a href="https://www.linkedin.com/in/jiwon-choi-sociology" title="LinkedIn"><img src="images/icons/linkedin.svg" alt="LinkedIn"></a>
       </div>
     </aside>
 
