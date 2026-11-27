@@ -12,19 +12,20 @@
 
     <!-- ===================== 왼쪽 사이드바 (고정) ===================== -->
     <aside class="sidebar">
-      <a class="side-name" href="#about">Jiwon Choi</a>
+      <a class="side-name" href="index.html">Jiwon Choi</a>
       <div class="name-rule"></div>
 
       <!-- 프로필 사진: images 폴더의 profile.jpg -->
       <img class="side-photo" src="images/profile.jpg" alt="Jiwon Choi">
 
       <!-- 메뉴: href="#구역이름" 이 오른쪽 본문의 section id 와 연결됩니다 -->
+      <!-- 메뉴: About·Research 는 첫 페이지 안의 구역, 나머지는 별도 페이지 -->
       <ul class="nav">
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
 
       <div class="side-bottom">
@@ -47,7 +48,7 @@
       </div>
     </aside>
 
-    <!-- ===================== 오른쪽 본문 (스크롤) ===================== -->
+    <!-- ===================== 오른쪽 본문 ===================== -->
     <main>
       <div class="content">
 
@@ -76,64 +77,6 @@
           </ul>
         </section>
 
-        <!-- ===== TEACHING ===== -->
-        <section id="teaching">
-          <h2>Teaching</h2>
-
-          <h3>Instructor</h3>
-          <div class="item">
-            <div class="entry"><strong>Community &amp; Urban Sociology</strong><span class="when">Fall 2025</span></div>
-            <p class="muted">University at Albany, SUNY</p>
-          </div>
-
-          <h3>Co-Instructor</h3>
-          <div class="item">
-            <div class="entry"><strong>Community &amp; Urban Sociology</strong><span class="when">Spring 2023</span></div>
-            <p class="muted">University at Albany, SUNY</p>
-          </div>
-
-          <h3>Teaching Assistant</h3>
-          <div class="tight">
-            <h4>University at Albany, SUNY</h4>
-            <div class="entry"><span>Social Problems</span><span class="when">Spring 2025</span></div>
-            <div class="entry"><span>Race &amp; Ethnicity</span><span class="when">Fall 2022</span></div>
-            <div class="entry"><span>Political Sociology</span><span class="when">Spring 2022</span></div>
-            <div class="entry"><span>Community &amp; Urban Sociology</span><span class="when">Fall 2021</span></div>
-
-            <h4>University of Seoul</h4>
-            <div class="entry"><span>Sociology of the Family</span><span class="when">Spring 2019</span></div>
-            <div class="entry"><span>Topics in Family and Demography</span><span class="when">Fall 2018</span></div>
-            <div class="entry"><span>Culture and Communication</span><span class="when">Spring 2018</span></div>
-            <div class="entry"><span>Cultural Anthropology</span><span class="when">Fall 2017</span></div>
-          </div>
-        </section>
-
-        <!-- ===== CV ===== -->
-        <section id="cv">
-          <h2>CV</h2>
-          <p>
-            <a class="button solid" href="files/cv.pdf" download="Jiwon_Choi_CV.pdf">Download PDF</a>
-            <a class="button" href="files/cv.pdf" target="_blank">Open in new tab</a>
-          </p>
-          <p class="muted">Last updated: October 2026</p>
-          <!-- CV를 새로 올릴 때마다 ?v= 뒤 숫자를 하나씩 올리세요 -->
-          <object class="pdf-frame" data="files/cv.pdf?v=2" type="application/pdf">
-            <p>Your browser can’t show the PDF here. <a href="files/cv.pdf">Download it instead.</a></p>
-          </object>
-        </section>
-
-        <!-- ===== CONTACT ===== -->
-        <section id="contact">
-          <h2>Contact</h2>
-          <table>
-            <tr><td>Email</td><td><a href="mailto:jchoi27@albany.edu">jchoi27@albany.edu</a></td></tr>
-            <tr><td>Address</td><td>Department of Sociology, Arts and Sciences Building, University at Albany, SUNY, 1400 Washington Avenue, Albany, NY 12222</td></tr>
-            <tr><td>Google Scholar</td><td><a href="https://scholar.google.com/citations?user=bQFxTnsAAAAJ&amp;hl=en">Profile</a></td></tr>
-            <tr><td>ResearchGate</td><td><a href="https://www.researchgate.net/profile/Jiwon-Choi-56">Profile</a></td></tr>
-            <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/jiwon-choi-sociology">Profile</a></td></tr>
-          </table>
-        </section>
-
       </div>
     </main>
 
@@ -142,7 +85,8 @@
   <!-- 스크롤 위치에 따라 왼쪽 메뉴의 현재 구역을 표시 -->
   <script>
     (function () {
-      var links = document.querySelectorAll('.nav a');
+      var links = document.querySelectorAll('.nav a[href^="#"]');
+      if (!links.length) return;   /* 다른 페이지에서는 실행하지 않음 */
       var sections = Array.prototype.map.call(links, function (a) {
         return document.querySelector(a.getAttribute('href'));
       });
