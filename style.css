@@ -10,7 +10,7 @@
   --icon: #8c9597;        /* 아이콘 색 */
   --line: #e4e6e6;        /* 구분선 */
   --accent: #d5e739;      /* 포인트 색: PANTONE 388 U (로고와 같은 색) */
-  --link: #3a4410;        /* 링크 글자색: 짙은 올리브 (로고 글자와 같은 색) */
+  --link: #272b17;        /* 이름·링크 글자색: 올리브 블랙 */
   --side-width: 396px;    /* 왼쪽 사이드바 너비 (사진 폭 = 너비 - 왼쪽 여백 - 오른쪽 여백) */
   --side-pad-left: 90px;  /* 사이드바 왼쪽 여백 */
   --side-pad-right: 56px; /* 사이드바 오른쪽 여백 */
@@ -59,7 +59,7 @@ a:hover { text-decoration-color: var(--link); }
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.15;
-  color: var(--heading);
+  color: var(--link);      /* 올리브 블랙 #272B17 */
   text-decoration: none;
 }
 .name-rule {
